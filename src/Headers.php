@@ -360,7 +360,7 @@ class Headers implements Countable, Iterator
      *
      * @return int count of currently known headers
      */
-    public function count()
+    public function count(): int
     {
         return count($this->headers);
     }
