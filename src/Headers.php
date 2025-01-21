@@ -305,7 +305,7 @@ class Headers implements Countable, Iterator
      *
      * @return void
      */
-    public function next(): void;
+    public function next(): void
     {
         next($this->headers);
     }
@@ -315,7 +315,7 @@ class Headers implements Countable, Iterator
      *
      * @return mixed
      */
-    public function key(): mixed;
+    public function key(): mixed
     {
         return (key($this->headers));
     }
@@ -325,7 +325,7 @@ class Headers implements Countable, Iterator
      *
      * @return bool
      */
-    public function valid(): bool;
+    public function valid(): bool
     {
         return (current($this->headers) !== false);
     }
@@ -335,7 +335,7 @@ class Headers implements Countable, Iterator
      *
      * @return void
      */
-    public function rewind(): void;
+    public function rewind(): void
     {
         reset($this->headers);
     }
@@ -345,7 +345,7 @@ class Headers implements Countable, Iterator
      *
      * @return array|Header\HeaderInterface
      */
-    public function current(): mixed;
+    public function current(): mixed
     {
         $current = current($this->headers);
         if (is_array($current)) {
